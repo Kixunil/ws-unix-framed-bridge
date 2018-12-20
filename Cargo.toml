@@ -1,0 +1,18 @@
+[package]
+name = "ws-unix-framed-bridge"
+version = "0.1.0"
+authors = ["Martin Habovstiak <martin.habovstiak@gmail.com>"]
+description = "A simple proxy that forwards Websocket messages to Unix sockets and vice versa."
+
+[dependencies]
+websocket = "0.20"
+tokio = "0.1"
+tokio-core = "0.1"
+serde = "1"
+bytes = "0.4"
+slog = "2"
+slog-term = "2"
+configure_me = "0.3"
+
+[build-dependencies]
+configure_me_codegen = "0.3"
